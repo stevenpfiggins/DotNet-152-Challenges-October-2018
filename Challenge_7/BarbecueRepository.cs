@@ -6,12 +6,7 @@ using System.Threading.Tasks;
 
 namespace Challenge_7
 {
-    class Program
+    class BarbecueRepository
     {
-        static void Main(string[] args)
-        {
-            ProgramUI program = new ProgramUI();
-            program.RunMenu();
-        }
     }
 }

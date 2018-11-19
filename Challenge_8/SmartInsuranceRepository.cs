@@ -22,30 +22,8 @@ namespace Challenge_8
 
         public void SortDriverList()
         {
-            List<Driver> driverPoints = ShowDriverList().OrderBy(d => d.TotalPoints).ThenBy(d => d.DriverName).ToList();
+            List<Driver> driverPoints = ShowDriverList().OrderBy(d => d.TotalPoints).ThenBy(d => d.DriverLastName).ThenBy(d => d.DriverFirstName).ToList();
             _drivers = driverPoints;
-        }
-
-        public decimal CalculatePremium()
-        {
-            decimal basePremium = 80.00m;
-            decimal totalPremium = 0.00m;
-            foreach (var driver in _drivers)
-            {
-                if (driver.TypeOfDriver == DriverType.Good)
-                {
-                    totalPremium = basePremium - 25.00m;
-                }
-                else if (driver.TypeOfDriver == DriverType.Normal)
-                {
-                    totalPremium = basePremium;
-                }
-                else if (driver.TypeOfDriver == DriverType.Bad)
-                {
-                    totalPremium = basePremium + 25.00m;
-                }
-            }
-            return totalPremium;
         }
     }
 }

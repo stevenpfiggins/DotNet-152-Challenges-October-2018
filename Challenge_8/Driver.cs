@@ -13,22 +13,26 @@ namespace Challenge_8
     class Driver
     {
         public DriverType TypeOfDriver { get; set; }
-        public string DriverName { get; set; }
+        public string DriverFirstName { get; set; }
+        public string DriverLastName { get; set; }
         public int TimesSped { get; set; }
         public int TimesSwerved { get; set; }
         public int TimesRolledThroughStop { get; set; }
         public int TimesFollowedTooClose { get; set; }
         public int TotalPoints { get; set; }
+        public decimal TotalPremium { get; set; }
 
-        public Driver(DriverType typeOfDriver, string driverName, int timesSped, int timesSwerved, int timesRolled, int timesFollowedTooClose, int totalPoints)
+        public Driver(DriverType typeOfDriver, string driverFirstName, string driverLastName, int timesSped, int timesSwerved, int timesRolled, int timesFollowedTooClose, int totalPoints, decimal totalPremium)
         {
             TypeOfDriver = typeOfDriver;
-            DriverName = driverName;
+            DriverFirstName = driverFirstName;
+            DriverLastName = driverLastName;
             TimesSped = timesSped;
             TimesSwerved = timesSwerved;
             TimesRolledThroughStop = timesRolled;
             TimesFollowedTooClose = timesFollowedTooClose;
             TotalPoints = totalPoints;
+            TotalPremium = totalPremium;
         }
 
         public Driver()

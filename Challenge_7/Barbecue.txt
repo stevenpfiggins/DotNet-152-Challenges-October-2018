@@ -1,7 +1,7 @@
 ﻿Scenario: Komodo Insurance is trying to improve their efficiency in 
 spending for company barbecues. They have two booths, an ice cream booth
 and a burger booth. Each employee is given one ticket for each of the booths.
-Each employee can get one burger or one dog with the burger booth ticket. 
+Each employee can get one burger or one hot dog with the burger booth ticket. 
 Each employee can get one ice cream cone with their ice cream ticket.
 
 The app will track data about the barbecue after it is over. 

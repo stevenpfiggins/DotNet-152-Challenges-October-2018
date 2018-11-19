@@ -76,8 +76,10 @@ namespace Challenge_8
             Console.Clear();
             Driver newDriver = new Driver();
             Console.WriteLine("To enter a new driver and calculate their premium, please enter the information below.\n" +
-                "What is the name of the driver?");
-            newDriver.DriverName = Console.ReadLine();
+                "What is the first name of the driver?");
+            newDriver.DriverFirstName = Console.ReadLine();
+            Console.WriteLine("What is the last name of the driver?");
+            newDriver.DriverLastName = Console.ReadLine();
             newDriver.TimesSped = 0;
             newDriver.TimesSwerved = 0;
             newDriver.TimesRolledThroughStop = 0;
@@ -88,9 +90,9 @@ namespace Challenge_8
 
         private void SeeAllDrivers()
         {
-            _smartInsuranceRepo.SortDriverList();
-            Console.WriteLine($"\t{"DriverName",-25} {"TotalPoints",-15} {"DriverType",-15} {"TotalPremium"}\n");
+            Console.WriteLine($"\t{"FirstName",-15} {"LastName",-15} {"TotalPoints",-15} {"DriverType",-15} {"TotalPremium"}\n");
             int i = 0;
+            decimal basePremium = 80.00m;
             foreach (var driver in _smartInsuranceRepo.ShowDriverList())
             {
                 i++;
@@ -106,8 +108,21 @@ namespace Challenge_8
                 {
                     driver.TypeOfDriver = DriverType.Bad;
                 }
+                if (driver.TypeOfDriver == DriverType.Good)
+                {
+                    driver.TotalPremium = basePremium - 25.00m;
+                }
+                else if (driver.TypeOfDriver == DriverType.Normal)
+                {
+                    driver.TotalPremium = basePremium;
+                }
+                else if (driver.TypeOfDriver == DriverType.Bad)
+                {
+                    driver.TotalPremium = basePremium + 25.00m;
+                }
+                //_smartInsuranceRepo.SortDriverList();
                 Console.WriteLine($"{i}.\t" +
-                    $"{driver.DriverName,-25} {driver.TotalPoints,-15} {driver.TypeOfDriver,-15} ${_smartInsuranceRepo.CalculatePremium()}");
+                    $"{driver.DriverFirstName,-15} {driver.DriverLastName,-15} {driver.TotalPoints,-15} {driver.TypeOfDriver,-15} ${driver.TotalPremium}");
             }
             Console.WriteLine("\nPress any key to continue...");
             Console.ReadKey();
