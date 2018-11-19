@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Challenge_3
 {
-    class ProgramUI
+    public class ProgramUI
     {
         OutingRepository _outingRepo = new OutingRepository();
 

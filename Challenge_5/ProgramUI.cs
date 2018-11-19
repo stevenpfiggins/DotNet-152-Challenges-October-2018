@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Challenge_5
 {
-    class ProgramUI
+    public class ProgramUI
     {
         GreetRepository _greetRepo = new GreetRepository();
 

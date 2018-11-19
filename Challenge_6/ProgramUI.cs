@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Challenge_6
 {
-    class ProgramUI
+    public class ProgramUI
     {
         GreenPlanRepository _greenPlanRepo = new GreenPlanRepository();
 

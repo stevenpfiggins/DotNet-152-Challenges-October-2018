@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Challenge_6
 {
     public enum CarType { Electric, Hybrid, Gas }
-    class Car
+    public class Car
     {
         public CarType TypeOfCar { get; set; }
         public string CarMake { get; set; }

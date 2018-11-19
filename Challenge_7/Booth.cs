@@ -13,7 +13,7 @@ namespace Challenge_7
         public decimal BoothTotalCost { get; set; }
     }
 
-    class Burger : Booth
+    public class Burger : Booth
     {
         public decimal HamburgerCost { get; set; }
         public decimal VeggieBurgerCost { get; set; }
@@ -21,7 +21,7 @@ namespace Challenge_7
         public decimal BurgerMiscCost { get; set; }
     }
 
-    class Treat : Booth
+    public class Treat : Booth
     {
         public decimal PopcornCost { get; set; }
         public decimal IceCreamCost { get; set; }

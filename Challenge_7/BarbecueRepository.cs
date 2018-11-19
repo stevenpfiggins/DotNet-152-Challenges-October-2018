@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Challenge_7
 {
-    class BarbecueRepository
+    public class BarbecueRepository
     {
     }
 }

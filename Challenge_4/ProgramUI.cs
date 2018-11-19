@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Challenge_4
 {
-    class ProgramUI
+    public class ProgramUI
     {
         BadgeRepository _badgeRepo = new BadgeRepository();
 

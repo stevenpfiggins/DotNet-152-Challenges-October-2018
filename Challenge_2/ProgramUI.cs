@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Challenge_2
 {
-    class ProgramUI
+    public class ProgramUI
     {
         ClaimRepository _claimRepo = new ClaimRepository();
 

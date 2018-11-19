@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Challenge_8
 {
-    class SmartInsuranceRepository
+    public class SmartInsuranceRepository
     {
         List<Driver> _drivers = new List<Driver>();
 

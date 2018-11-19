@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Challenge_3
 {
-    class OutingRepository
+    public class OutingRepository
     {
         List<Outing> _outings = new List<Outing>();
 

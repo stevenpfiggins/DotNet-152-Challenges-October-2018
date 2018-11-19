@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Challenge_2
 {
-    class Claim
+    public class Claim
     {
         public int ClaimID { get; set; }
         public string ClaimType { get; set; }

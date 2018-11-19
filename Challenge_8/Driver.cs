@@ -10,7 +10,7 @@ namespace Challenge_8
     {
         Good, Normal, Bad
     }
-    class Driver
+    public class Driver
     {
         public DriverType TypeOfDriver { get; set; }
         public string DriverFirstName { get; set; }

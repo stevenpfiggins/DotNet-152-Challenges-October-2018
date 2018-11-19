@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Challenge_6
 {
-    class GreenPlanRepository
+    public class GreenPlanRepository
     {
         List<Car> _cars = new List<Car>();
 

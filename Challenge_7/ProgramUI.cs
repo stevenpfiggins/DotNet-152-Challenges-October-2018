@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Challenge_7
 {
-    class ProgramUI
+    public class ProgramUI
     {
         BarbecueRepository _barbecueRepo = new BarbecueRepository();
 

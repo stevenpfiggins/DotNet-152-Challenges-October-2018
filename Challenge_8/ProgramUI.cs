@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Challenge_8
 {
-    class ProgramUI
+    public class ProgramUI
     {
         SmartInsuranceRepository _smartInsuranceRepo = new SmartInsuranceRepository();
         public void RunMenu()

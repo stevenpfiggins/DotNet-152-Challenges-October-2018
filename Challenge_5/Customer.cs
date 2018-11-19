@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Challenge_5
 {
     public enum CustomerType { Current, Potential, Past }
-    class Customer
+    public class Customer
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
